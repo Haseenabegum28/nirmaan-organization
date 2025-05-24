@@ -1,16 +1,15 @@
-package Studentgrading;
-
+package votecheck;
+import java.util.Scanner;
 public class Day3 {
-public static void main(String[]args) {
-	int mark=85;
-	if(mark<35) {
-		System.out.println("Fail");
-	}else if(mark>=90) {
-		System.out.println("Grade A");
-	}else if(mark>=80) {
-		System.out.println("Grade B");
-	}else {
-		System.out.println("Grade C");
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter your age");
+		int age=sc.nextInt();
+		if(age>18) {
+			System.out.println("you are eligible to vote");
+			}else{
+				System.out.println("you are not eligible to vote");
+			}
 	}
-}
+
 }
