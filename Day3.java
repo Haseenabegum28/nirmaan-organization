@@ -1,15 +1,12 @@
-package condition;
-
-import java.util.Scanner;
+package dowhile;
 
 public class Day3 {
 public static void main(String[]args) {
-	Scanner sc=new Scanner(System.in);
-	System.out.println("enter a number");
-	int i=sc.nextInt();
-	while(i<5) {
+	int i=0;
+	do {
 		System.out.println(i);
 		i++;
 	}
+	while(i<5);
 }
 }
